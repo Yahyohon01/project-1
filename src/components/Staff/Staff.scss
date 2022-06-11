@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.swiper--title{
+  text-align: center;
+  color: #000;
+  font-size: 57px;
+  line-height: 1.25;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  padding-top: 50px;
+}
+
+.swiper {
+  width: 1200px;
+  height: 500px;
+  margin-top: 60px;
+  color: black;
+}
+
+.SwiperSlide{
+  transition: 0.3s;
+}
+
+.staff-span{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.main--staff--div{
+  width: 900px; 
+  display: flex;
+  margin: auto;
+  align-items: center;
+  h2{
+    padding-left: 5px;
+    margin: 0;
+    color: #000;
+  }
+  p{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+  }
+  h5{
+    padding: 5px;
+  }
+  .main--staff--div--sub--title{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+  }
+  &--img{
+    object-fit: cover;
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .swiper{
+    width: 100%;
+  }
+  .main--staff--div  {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+  }
+  .main--staff--div--sub--title{
+    width: 100%;
+  }
+  .main--staff--div--title{
+    width: 100%;
+  }
+}

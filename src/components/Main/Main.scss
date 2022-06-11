@@ -1,0 +1,136 @@
+.main--content--span{
+    font-weight: bold;
+    color: white;
+}
+.main--section{
+    background: #28343c;
+    color: white;
+    &--author{
+      padding-top: 40px;
+      margin-bottom: 32px;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 40px;
+    }
+}
+
+// Modal
+.getModalWin {
+  display: block !important;
+}
+
+.space {
+  height: 0 !important;
+}
+
+
+// Modal
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 1290px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;        
+    }
+}
+
+.text-box {
+    text-align: center;
+    padding: 25px;
+  }
+  
+  .btnn:link,
+  .btnn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.4s;
+    // position: absolute;
+  }
+  
+  .btnn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btnn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btnn-white {
+    background: #97b0bf;
+    color: #ffff;
+  }
+  
+  .btnn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.2s;
+  }
+  
+//   .btn-white::after {
+//     background: #97b0bf;
+//   }
+  
+  .btnn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+  
+  .btnn-animated {
+    -webkit-animation: moveInBottom 5s ease-out;
+            animation: moveInBottom 5s ease-out;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+  }
+  
+  @-webkit-keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+
+//      MODAL
+.modalImg{
+  width: 100%;
+  height: 550px;
+}
+//      MODAL

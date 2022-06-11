@@ -1,0 +1,56 @@
+.portfolio--section{
+    background-color: #171717;
+    border-top: 5px solid #384045;
+    border-bottom: 5px solid #ccc;
+    text-align: left;
+    padding: 8px 0 6px;
+    &--content{
+        font-size: 18px;
+        a{
+            font-size: 18px;
+            color: #28343c;
+        }
+        h5{
+            font-size: 1.5rem;
+            color: #777;
+        }
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    &--title{
+        // margin-bottom: -11px;
+        // padding-bottom: 12px;
+        h1{
+            color: #ffff;
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 200;
+            z-index: 2;
+            padding: 0 0 2px;
+            line-height: 46px;
+        }
+    }
+}
+
+.row--content{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 2rem auto;
+    border-radius: 20px;
+}
+
+.row--img{
+    width: 60%;
+    border-radius: 20px;
+    object-fit: cover;
+    padding: 0;
+}
+
+.row--title{
+    padding-right: 30px;
+}
+
+.modalimg{
+    object-fit: cover;
+}
